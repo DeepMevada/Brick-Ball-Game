@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Game</title>
+    <style>
+        #gameover {
+            position: absolute;
+            width: 465px;
+            height: 500px;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+
+        #youwin {
+            width: 100px;
+            position: absolute;
+            top: 200px;
+            left: 150px;
+            display: none;
+        }
+
+        #youlose {
+            width: 400px;
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            display: none;
+        }
+
+        #restart {
+            position: absolute;
+            top: 310px;
+            left: 155px;
+            cursor: pointer;
+            font-size: 1.25em;
+            color: #FFF;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gameover">
+        <img src="img/win.png" alt="" id="youwon">
+        <img src="img/gameover.png" alt="" id="youlose">
+        <div id="restart">Play Again</div>
+    </div>
+
+    <canvas id="brickball" width="800" height="600"></canvas>
+    <script src="js/components.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
